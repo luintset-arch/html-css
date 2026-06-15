@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilis/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,5 +31,14 @@
             <p>A segurança dos dados é um dos principais temas relacionados à computação em nuvem. Provedores têm adotado criptografia, monitoramento constante e sistemas avançados de proteção para garantir a confidencialidade das informações armazenadas. Mesmo assim, especialistas recomendam que empresas também adotem boas práticas de segurança interna. Com a crescente demanda por soluções digitais, a computação em nuvem deve continuar em forte expansão nos próximos anos. A tecnologia será essencial para apoiar inovação, automação e novos modelos de negócios em um mundo cada vez mais conectado.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
